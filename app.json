@@ -1,11 +1,9 @@
 {
   "name": "twomnistrate",
-  "description": "sinatra example implementation of omniauth twitter with orchestrate",
-  "repository": "https://github.com/tejasmanohar/twomnistrate",
-  "logo": "http://siliconflorist.com/wp-content/uploads/2013/05/Orchestrate.jpg",
+  "description": "sinatra example implementation of omniauth twitter with CenturyLink Cloud",
+  "repository": "https://github.com/pymander/twomnistrate",
   "keywords": ["ruby", "sinatra", "orchestrate", "omniauth", "twitter"],
   "website": "http://twomnistrate.herokuapp.com",
-  "repository": "http://github.com/tejasmanohar/twomnistrate",
   "env": {
     "CONSUMER_KEY": {
       "description": "twitter public key to generate auth url",
@@ -15,8 +13,12 @@
       "description": "twitter secret api key",
       "required": true
     },
-    "API_KEY": {
-      "description": "orchestrate api key",
+    "MONGO_HOST": {
+      "description": "MongoDB host",
+      "required": true
+    },
+    "MONGO_DB": {
+      "description": "MongoDB database name",
       "required": true
     }
   }
